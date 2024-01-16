@@ -16,7 +16,8 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
-    <linkl rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="loader.css">
+    <link href="https://unpkg.com/tailwindcss@"
 
     <link href="https://code.jquery.com/jquery-3.4.1.min.js"></script>"
     
@@ -258,15 +259,19 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
                 <div class="col">
-                   <form action="sendmail.php" method="POST" netlify>
+                   <form id="contact-form" action="https://formspree.io/f/xdoqkwea" method="POST" netlify>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" class="form-control" required class="input" id="name" aria-describedby="name" placeholder="Input name">
+                    </div> <br>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" name="email" class="form-control" required class="input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Message</label>
-                        <textarea type="textarea" name="message" class="form-control" id="exampleInputPassword1"  required class="input" placeholder="Input Message"></textarea>
+                        <label for="message">Message</label>
+                        <textarea type="textarea" name="message" class="form-control" id="message"  required class="input" placeholder="Input Message"></textarea>
                     </div> <br>
                     <div class="form-group">
                         <button class="button" type="submit" name="submit">
