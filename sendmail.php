@@ -28,8 +28,8 @@ if (isset($_POST['submit'])) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'okarioalbert@gmail.com';
-        $mail->Password   = 'shaman123554';
+        $mail->Username   = 'example@gmail.com';
+        $mail->Password   = 'password';
         $mail->SMTPSecure = 'tls';
         // $mail->SMTPAutoTLS = false; 
         $mail->Port       = 587;
@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
 
         //Content
         $mail->isHTML(true);
-        $mail->Subject = 'Website Albert';
+        $mail->Subject = 'Website';
         $mail->Body    = "<h1>Content dari Form</h1> $message";
         $mail->AltBody = 'Data formulir';
 
