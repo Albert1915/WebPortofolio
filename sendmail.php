@@ -8,7 +8,7 @@
 
         die( $email .' '. $message);
 
-        if( mail($email, $message) ){
+        if( mail("okarioalbert@gmail.com", $email, $message) ){
             echo "Email berhasil dikirim";
         }
         else {
